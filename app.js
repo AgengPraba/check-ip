@@ -16,7 +16,7 @@ rl.question("Enter a domain name: ", (hostname) => {
       return;
     }
 
-    const requestUrl = `${api}=${ipAddress}`;
+    const requestUrl = `${api}&ip=${ipAddress}`;
     axios
       .get(requestUrl)
       .then((response) => {
