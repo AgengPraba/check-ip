@@ -1,6 +1,7 @@
 const dns = require("dns");
 const axios = require("axios");
 const readline = require("readline");
+const api = require("./api");
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -15,7 +16,7 @@ rl.question("Enter a domain name: ", (hostname) => {
       return;
     }
 
-    const requestUrl = `https://api.ip2location.io/?key=73A9393FD4D898C0D755C6302C8CD9E1&ip=${ipAddress}`;
+    const requestUrl = `${api}=${ipAddress}`;
     axios
       .get(requestUrl)
       .then((response) => {
