@@ -1,6 +1,6 @@
 # Check IP Location
 
-This is a program to track an ip address using a CLI based domain name.
+This is a CLI program to track an IP address using a domain name.
 
 ## Screenshots
 
